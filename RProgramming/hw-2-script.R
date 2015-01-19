@@ -43,7 +43,18 @@ query4 <- sqldf("select unique AGEP from acs") ## NO
 
 
 #Fourth task
+require(httr)
+require(XML)
 
+connection <- url("http://biostat.jhsph.edu/~jleek/contact.html")
+htmlCode <- readLines(connection)
+close(connection)
+c(nchar(htmlCode[10]), nchar(htmlCode[20]), nchar(htmlCode[30]), nchar(htmlCode[100]))
+
+htmlCode <- GET("http://biostat.jhsph.edu/~jleek/contact.html")
+content <- content(htmlCode, as = "text")
+htmlParsed <- htmlParse(content, asText = TRUE)
+xpathSApply(htmlParsed, "//title", xmlValue)
 
 
 #Fifth task
