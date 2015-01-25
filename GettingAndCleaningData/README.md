@@ -1,6 +1,7 @@
 GettingAndCleaningDataCourseProject
 ========================================
 Description of the run_analysis.R script work flow.
+
 1.  Unzip file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and put it into the folder called "data".
 2.  Put run_analysis.R script in the same directory with "data"
 3.  Run run_analysis.R 
