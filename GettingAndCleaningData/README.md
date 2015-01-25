@@ -7,4 +7,5 @@ Description of the run_analysis.R script work flow.
 4. Third, you will find two output files are generated in the current working directory:
 * merged_data.txt
 * data_with_means.txt
+
 5.Use data <- read.table("data_with_means.txt") command to read the file. 
